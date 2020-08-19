@@ -1,0 +1,79 @@
+"*":
+  "atom-beautify":
+    c:
+      beautify_on_save: true
+      configPath: "/Users/shinji/.atom/packages/atom-beautify/src/beautifiers/uncrustify/default.cfg"
+    cpp:
+      beautify_on_save: true
+      configPath: "/Users/shinji/.atom/packages/atom-beautify/src/beautifiers/uncrustify/default.cfg"
+    java:
+      beautify_on_save: true
+      configPath: "/Users/shinji/.atom/packages/atom-beautify/src/beautifiers/uncrustify/default.cfg"
+  "atom-ctags":
+    disableComplete: true
+  "autocomplete-clang":
+    includeNonDoxygenCommentsAsDocumentation: true
+    "std c++": "c++17"
+  "autocomplete-paths":
+    enableHtmlSupport: true
+  "autocomplete-plus":
+    similarSuggestionRemoval: "textOrSnippet"
+  "autocomplete-python":
+    useKite: false
+  core:
+    audioBeep: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "editorconfig"
+      "expand-selection-to-quotes"
+      "keybinding-resolver"
+      "symbols-view"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "menlo,真源ゴシック"
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "6df4de75-02d6-4ffc-888c-78c7ab06ef4d"
+  linter: {}
+  "linter-gcc":
+    gccDefaultCppFlags: "-Wall -std=c++17"
+  "linter-ui-default": {}
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        blue: "#80b6e4"
+        cyan: "#3fc6c6"
+        green: "#6bc82d"
+        magenta: "#7f7f7f"
+        red: "#7f7f7f"
+        yellow: "#bed22b"
+      zBright:
+        brightGreen: "#34cf93"
+        brightMagenta: "#806ed9"
+        brightRed: "#ff645f"
+        brightYellow: "#cfb81a"
+    core: {}
+    iconColors: {}
+    style:
+      animationSpeed: 2
+      defaultPanelHeight: "200px"
+      fontFamily: "Ricty Diminished"
+      fontSize: "16"
+    toggles:
+      autoClose: true
+  "terminal-plus":
+    core: {}
+    toggles: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false

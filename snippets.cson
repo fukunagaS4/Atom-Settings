@@ -1,0 +1,180 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.cpp':
+    'make file':
+        'prefix': 'temp'
+        'body': """
+                #include <bits/stdc++.h>
+                using namespace std;\n
+                int main(){\n\t$1\n}
+                """
+        'description': 'template'
+
+    'for':
+        'prefix': 'for'
+        'body': """
+                for(int ${1:i} = ${2:0}; ${1:i} < ${3:n}; ${1:i}++)$4
+                """
+        'description': 'template'
+
+    'scanf':
+        'prefix': 'scan'
+        'body': """
+                scanf("%${1:d}", &${2:n});$3
+                """
+        'description': 'template'
+
+    'printf':
+        'prefix': 'prin'
+        'body': """
+                printf("%${1:d}$2", ${3:ans});$4
+                """
+        'description': 'template'
+
+    'cin':
+        'prefix': 'cin'
+        'body': """
+                cin >> $1;$2
+                """
+        'description': 'template'
+
+    'cout':
+        'prefix': 'cout'
+        'body': """
+                cout << ${1:ans} << endl;$2
+                """
+        'description': 'template'
+
+    'push_back':
+            'prefix': 'push_buck'
+            'body': """
+                    push_back($1);
+                    """
+            'description': 'template'
+
+    'emplace_back':
+            'prefix': 'emplace_buck'
+            'body': """
+                    emplace_back($1);
+                    """
+            'description': 'template'
+
+    'chmin':
+        'prefix': 'chmin'
+        'body': """
+                template<class T> inline bool chmin(T &a, const T b) {
+                    if (a > b) {
+                        a = b;
+                        return true;
+                    }
+                    return false;
+                }
+                """
+        'description': 'template'
+
+    'chmax':
+        'prefix': 'chmax'
+        'body': """
+                template<class T> inline bool chmax(T &a, const T b) {
+                    if (a < b) {
+                        a = b;
+                        return true;
+                    }
+                    return false;
+                }
+                """
+        'description': 'template'
+
+    'add_mod':
+        'prefix': 'add_mod'
+        'body': """
+                const int MOD = 1000000007;
+                template<class T> inline void add_mod(T &a, const T b) {
+                    a += b;
+                    if(a >= MOD) a -= MOD;
+                }
+                """
+        'description': 'template'
+
+    'sub_mod':
+        'prefix': 'sub_mod'
+        'body': """
+                const int MOD = 1000000007;
+                template<class T> inline void sub_mod(T &a, const T b) {
+                    a -= b;
+                    if(a < 0) a += MOD;
+                }
+                """
+        'description': 'template'
+
+    'mult_mod':
+        'prefix': 'mult_mod'
+        'body': """
+                const int MOD = 1000000007;
+                template<class T> inline void mult_mod(T &a, const T b) {
+                    a *= b;
+                    if(a >= 0) a -= MOD;
+                }
+                """
+        'description': 'template'
+
+    'pow_mod':
+        'prefix': 'pow_mod'
+        'body': """
+                const int MOD = 1000000007;
+                template <typename T> inline T pow_mod(T base, T exp, const T modulus) {
+                  base %= modulus;
+                  T result = 1;
+                  while (exp > 0) {
+                    if (exp & 1) result = (result * base) % modulus;
+                    base = (base * base) % modulus;
+                    exp >>= 1;
+                  }
+                  return result;
+                }
+                """
+        'description': 'template'
+
+    'INT_INF':
+        'prefix': 'INF'
+        'body': 'const int INF = 1 << 30;'
+        'description': 'limits'
+
+    'LONG_INF':
+        'prefix': 'INFL'
+        'body': 'const long INF = 1L << 60;'
+        'description': 'limits'
+
+    'MOD7':
+        'prefix': 'mod7'
+        'body': 'const int MOD = 1000000007;'
+        'description': 'modulo'
+
+
+# '':
+#     '':
+#         'prefix': ''
+#         'body': """
+#
+#                 """
+#         'description': 'template'
